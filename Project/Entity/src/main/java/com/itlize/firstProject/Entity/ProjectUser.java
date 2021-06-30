@@ -1,20 +1,17 @@
-/*
-package com.Entity;
+
+package com.itlize.firstProject.Entity;
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-public class Project_Resources {
+public class ProjectUser {
     @Id
     @GeneratedValue
     private Long projectResourceID;
     private long projectID;
     private long resourceID;
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
-    @JoinTable(
-            name = ""
-    )
+
 
     public Long getProjectResourceID() {
         return projectResourceID;
@@ -40,4 +37,4 @@ public class Project_Resources {
         this.resourceID = resourceID;
     }
 }
-*/
+
