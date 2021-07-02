@@ -9,12 +9,15 @@ public class Project_Resources {
     @Id
     @GeneratedValue
     private Long projectResourceID;
-    private long projectID;
-    private long resourceID;
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
-    @JoinTable(
-            name = ""
-    )
+    private Long projectID;
+    private Long resourceID;
+
+    public Project_Resources(long projectResourceID, long projectID, long resourceID) {
+    }
+
+    public Project_Resources() {
+
+    }
 
     public Long getProjectResourceID() {
         return projectResourceID;
@@ -24,19 +27,19 @@ public class Project_Resources {
         this.projectResourceID = projectResourceID;
     }
 
-    public long getProjectID() {
+    public Long getProjectID() {
         return projectID;
     }
 
-    public void setProjectID(long projectID) {
+    public void setProjectID(Long projectID) {
         this.projectID = projectID;
     }
 
-    public long getResourceID() {
+    public Long getResourceID() {
         return resourceID;
     }
 
-    public void setResourceID(long resourceID) {
+    public void setResourceID(Long resourceID) {
         this.resourceID = resourceID;
     }
 }

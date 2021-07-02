@@ -1,7 +1,5 @@
 package com.itlize.firstProject.Entity;
 
-import com.itlize.firstProject.Project;
-
 import javax.persistence.*;
 import java.util.Date;
 import java.util.HashSet;
@@ -37,7 +35,7 @@ public class User {
         this.project = project;
     }
 
-    public User() {
+    public User(long userID, String userName1, String time_created, String last_updated, String password) {
 
     }
 

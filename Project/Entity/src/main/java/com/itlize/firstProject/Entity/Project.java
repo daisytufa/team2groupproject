@@ -28,7 +28,22 @@ public class Project {
         this.users = users;
     }
 
+    public Project(Long projectID, String project1, String user1) {
+    }
+
     public Project() {
+
+    }
+
+    public Set<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(Set<User> users) {
+        this.users = users;
+    }
+
+    public void ProjectLong (Long projectID, String project1) {
 
     }
 

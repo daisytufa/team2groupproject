@@ -24,6 +24,10 @@ public class Resource {
         this.projects = projects;
     }
 
+    public Resource(long resourceID, String resource1, String resourceCode) {
+
+    }
+
     public Resource() {
 
     }

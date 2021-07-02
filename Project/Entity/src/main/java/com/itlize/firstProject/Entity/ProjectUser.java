@@ -9,8 +9,15 @@ public class ProjectUser {
     @Id
     @GeneratedValue
     private Long projectResourceID;
-    private long projectID;
-    private long resourceID;
+    private Long projectID;
+    private Long resourceID;
+
+    public ProjectUser(Long projectResourceID, Long projectID, Long resourceID) {
+    }
+
+    public ProjectUser() {
+
+    }
 
 
     public Long getProjectResourceID() {
